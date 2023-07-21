@@ -1,0 +1,173 @@
+html {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.rating-component {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 50px;
+  border-radius: 30px;
+  gap: 40px;
+}
+
+.rating-component img {
+  width: 50px;
+  height: 50px;
+  background-color: hsla(217, 11%, 38%, 0.42);
+  border-radius: 50%;
+  padding: 15px;
+  overflow: visible;
+}
+
+.rating-component .component-info h2,
+.thanks-component .component-info h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rating-component .component-info p,
+.thanks-component .component-info p {
+  font-size: 1.5rem;
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+
+
+
+
+.rating-component .rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-component .rating .label {
+  font-size: 2.3rem;
+  background-color: hsla(217, 11%, 38%, 0.42);
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  width: 60px;
+  height: 60px;
+  padding: 4%;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating .label .label-text {
+position: absolute;
+border-radius: 50%;
+}
+
+
+.rating-component .rating .label:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.rating-component .rating .label input:checked ~ .label-text {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+/* BUTTON */
+
+.rating-component .btn-submit {
+  border: none;
+  box-shadow: 2px 10px 10px #362e2eac;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.rating-component .btn-submit:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 5px 10px #dad4d491;
+}
+
+
+
+
+
+/* THANKS */
+
+.thanks-component {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 50px;
+  border-radius: 30px;
+  gap: 40px;
+}
+
+.thanks-component img {
+  width: 200px;
+  align-self: center;
+}
+
+.thanks-component .rating-given {
+  background-color: hsla(217, 11%, 38%, 0.42);
+  color: hsl(25, 97%, 53%);
+  font-size: 1.5rem;
+  align-self: center;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.thanks-component .component-info {
+  text-align: center;
+}
+
+
+
+/* INTERACTION */
+
+.vanish {
+   display: none;
+   transition: 0.3s ease-in-out;
+}
+
+
+.appear {
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
