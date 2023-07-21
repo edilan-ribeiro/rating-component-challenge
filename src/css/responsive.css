@@ -1,0 +1,57 @@
+
+@media (max-width:500px) {
+
+    .rating-component{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .rating-component .rating .label {
+        font-size: 2rem;
+        background-color: hsla(217, 11%, 38%, 0.42);
+        border-radius: 50%;
+        color: hsl(217, 12%, 63%);
+        width: 50px;
+        height: 50px;
+        padding: 2%;
+        position: relative;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .rating-component .btn-submit {
+        margin-bottom: 20px;
+      }
+  
+
+}
+
+
+
+@media (max-width:445px) {
+
+    .rating-component{
+        margin: 20px;
+        padding: 20px;
+    }
+    .rating-component .rating .label {
+        font-size: 2rem;
+        background-color: hsla(217, 11%, 38%, 0.42);
+        border-radius: 50%;
+        color: hsl(217, 12%, 63%);
+        width: 45px;
+        height: 45px;
+        padding: 2%;
+        position: relative;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+  
+
+}
+
