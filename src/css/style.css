@@ -16,12 +16,13 @@ body {
 .rating-component {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 500px;
+  max-width: 500px;
+  max-height: 500px;
   background-color: hsl(213, 19%, 18%);
   padding: 50px;
   border-radius: 30px;
   gap: 40px;
+  margin: 20px;
 }
 
 .rating-component img {
@@ -49,9 +50,6 @@ body {
   letter-spacing: 1.1px;
 }
 
-
-
-
 .rating-component .rating {
   display: flex;
   justify-content: space-between;
@@ -73,31 +71,28 @@ body {
 }
 
 .rating .label .label-text {
-position: absolute;
-border-radius: 50%;
+  position: absolute;
+  border-radius: 50%;
 }
 
-
 .rating-component .rating .label:hover {
-    background-color: hsl(217, 12%, 63%);
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+  background-color: hsl(217, 12%, 63%);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .rating-component .rating .label input:checked ~ .label-text {
-    background-color: hsl(25, 97%, 53%);
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease-in-out;
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
 }
-
-
 
 /* BUTTON */
 
@@ -115,28 +110,25 @@ border-radius: 50%;
 }
 
 .rating-component .btn-submit:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: hsl(25, 97%, 53%);
-    transition: 0.5s ease-in-out;
-    box-shadow: 2px 5px 10px #dad4d491;
+  cursor: pointer;
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 5px 10px #dad4d491;
 }
-
-
-
-
 
 /* THANKS */
 
 .thanks-component {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 500px;
+  max-width: 500px;
+  max-height: 500px;
   background-color: hsl(213, 19%, 18%);
   padding: 50px;
   border-radius: 30px;
   gap: 40px;
+  margin: 20px;
 }
 
 .thanks-component img {
@@ -155,19 +147,21 @@ border-radius: 50%;
 
 .thanks-component .component-info {
   text-align: center;
+  margin-bottom: 20px;
 }
-
-
 
 /* INTERACTION */
 
 .vanish {
-   display: none;
-   transition: 0.3s ease-in-out;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  position: absolute;
+  z-index: -1;
 }
 
-
 .appear {
-    position: absolute;
-    transition: 0.3s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
 }
